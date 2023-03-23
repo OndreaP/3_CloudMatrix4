@@ -1,0 +1,40 @@
+
+.search {
+    background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
+    text-align: center;
+    padding: 150px;
+    margin-top: auto;
+}
+
+#hsearchbtn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 45px 96px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px;
+}
+
+.homebtns {
+    padding: 10px;
+    text-align: center;
+}
+
+#btn1, #btn2, #btn3, #btn4  {
+    background-color: black; 
+    border: none;
+    color: white;
+    padding: 100px 200px;
+    text-align: center;
+    font-size: 20px;
+    margin: 100px;
+  }
+
+hr {
+    border: 5px solid black;
+    margin: auto;
+
+}

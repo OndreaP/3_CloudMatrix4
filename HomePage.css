@@ -1,5 +1,5 @@
 
-.search {
+/*.search {
     background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
     text-align: center;
     padding: 150px;
@@ -36,23 +36,8 @@
 hr {
     border: 5px solid black;
     margin: auto;
-
-}
-
-/*fliping collections*/
-.container{
-    display: grid;
-    width: 90%;
-    margin: 40px auto;
-}
-#mn{
-width: 380px;
-height: 280px;
-float: left;
-margin: 70px;
-padding-left: 170px;
-}
-.openfront{
-    width: 100%;
-    height: 100%;
+}*/
+/*flipping around*/
+.front{
+    background: url();
 }

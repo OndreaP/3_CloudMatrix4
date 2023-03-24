@@ -38,6 +38,18 @@ hr {
     margin: auto;
 }*/
 /*flipping around*/
+.front,
+.back{
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    backface-visibility: hidden;
+}
 .front{
-    background: url();
+    background: url(./backgroundimg-fashion3.jpg) no-repeat center/cover;
+}
+.back{
+    background: url(./);
 }

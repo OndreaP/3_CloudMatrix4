@@ -2,7 +2,7 @@
 .search {
     background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
     text-align: center;
-    padding: 150px;
+    padding: 100px;
     margin-top: auto;
 }
 
@@ -16,25 +16,47 @@
     display: inline-block;
     font-size: 16px;
     margin: 50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.40);
 }
 
 .homebtns {
-    padding: 10px;
+    background-color: #F8C8DC;
+    padding: 20px;
     text-align: center;
+    margin: auto;
 }
 
 #btn1, #btn2, #btn3, #btn4  {
-    background-color: black; 
-    border: none;
+    background-color: white; 
+    border: solid black 6px;
     color: white;
-    padding: 100px 200px;
+    width: 400px;
+    height: 200px;
     text-align: center;
     font-size: 20px;
-    margin: 100px;
+    margin: 50px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
 hr {
-    border: 5px solid black;
+    border: 3px solid black;
     margin: auto;
+}
+#btn1{
+    background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
+}
 
+
+#btn2{
+    background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
+}
+
+
+#btn3{
+    background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
+}
+
+
+#btn4{
+    background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
 }

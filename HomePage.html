@@ -12,23 +12,46 @@
 
  <body>
 
- <header>
-    <!--Add header-->
- </header>
- <hr>
- <div class="search">
-    <button id="hsearchbtn" type="button">Search All Collections</button>
- </div>
- <hr>
- <div class=homebtns>
-    <button id="btn1" type="button" onmouseover="changeText1()" onmouseout="changeTextBack()">collection 1</button>
-    <button id="btn2" type="button" onmouseover="changeText2()" onmouseout="changeTextBack()">collection 2</button><br>
-    <button id="btn3" type="button" onmouseover="changeText3()" onmouseout="changeTextBack()">collection 3</button>
-    <button id="btn4" type="button" onmouseover="changeText4()" onmouseout="changeTextBack()">collection 4</button> 
- </div>
- <hr>
- <footer>
-    <!--Add Footer-->
- </footer>
- </body>
- </html>
+   <header>
+     <nav>
+        <div class="header">
+         <a href=""><span>CloudMatrix</span></a>
+         <a href="">Home</a>
+  
+         <div class="dropdown">
+           <a id="dropbtn">Collections
+             <i class="fa fa-caret-down"></i>
+           </a>
+           <div class="dropdown-content">
+             <a href="#">Collection 1</a>
+             <a href="#">Collection 2</a>
+             <a href="#">Collection 3</a>
+             <a href="#">Collection 4</a>
+           </div>      
+         </div> 
+         <a href="">Search</a>
+        </div>
+     </nav>
+   </header>
+  
+   <hr>
+  
+   <div class="search">
+      <button id="hsearchbtn" type="button">Search All Collections</button>
+   </div>
+  
+   <hr>
+  
+   <div class=homebtns>
+      <button id="btn1" type="button" onmouseover="changeText1()" onmouseout="changeTextBack()">collection 1</button>
+      <button id="btn2" type="button" onmouseover="changeText2()" onmouseout="changeTextBack()">collection 2</button><br>
+      <button id="btn3" type="button" onmouseover="changeText3()" onmouseout="changeTextBack()">collection 3</button>
+      <button id="btn4" type="button" onmouseover="changeText4()" onmouseout="changeTextBack()">collection 4</button>
+   </div>
+   <hr>
+   <footer>
+     <span>&copy;</span> CLOUDMATRIX
+     Thank you for visiting
+   </footer>
+   </body>
+   </html>

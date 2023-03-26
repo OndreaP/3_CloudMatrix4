@@ -1,37 +1,144 @@
-.main{
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.bgimage img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.search{
+    width: 100%;
+    height: 150px;
+    background: #012733;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.column1{
-    width: 35%;
-    border: 2px solid black;
-    padding: 5px;
-}
-
-.column1 h1{
-    color:red;
-    font-size: 20px;
-}
-
-.flex_container {
+.search form{
+    background: #ffffff;
+    width: 600px;
+    height: 55px;
     display: flex;
-    flex-flow: column wrap;
-    background-color: DodgerBlue;
+}
+
+.search form input{
+    flex: 1;
+    border:none;
+    outline: none;
+
+}
+
+.search form button{
+    background: #c3e3eb;
+    padding:10px;
+    border:none;
+    outline: none;
+    color:#012733;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.filter{
+    width: 100%;
+    height: 100px;
+    background: #012733;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.flex_container div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.filter form{
+   
+    width: 600px;
+    height: 55px;
+    display: flex;
+    font-size: 20px;
+    color:white;
 }
 
-.column2{
-    width: 63%;
-    border: 2px solid black;
-    padding: 5px;
+.filter form input{
+    flex: 1;  
+    border:none;
+    outline: none;
+   
 }
+
+.filter form button{
+    background: #c3e3eb;
+    padding:10px;
+    border:none;
+    outline: none;
+    color:#012733;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    
+}
+
+ input.checkboxes{
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    
+ }
+
+ .imageResults img{
+    width: 100%;
+    object-fit: cover;
+    padding: 5%;
+    border-style: dotted;
+    border-color: #012733;
+ }
+
+ .content{
+    list-style: none;
+    
+    display:flex;
+    position: relative;
+    
+ }
+
+ .content .sidebar{
+    position: fixed;
+    width: 300px;
+    height:1000px;
+    background: #c3e3eb;
+    padding: 30px 0px;
+    
+   
+   
+ }
+
+ .content .sidebar h2{
+    color: #012733;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+ }
+
+ .content .sidebar ul li{
+    padding: 15px;
+    border-bottom:20px solid #c3e3eb;
+    border-top:1px solid #c3e3eb;
+    text-align: center;
+ }
+
+ .content .sidebar ul li a{
+    color: #012733;
+    font-size:35px;
+    
+
+ }
+
+ .content2{
+    margin-left:300px;
+    width: 100%;
+    object-fit: contain;
+ }

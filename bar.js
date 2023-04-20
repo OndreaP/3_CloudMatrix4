@@ -52,3 +52,31 @@ let names = [
       item.remove();
     });
   }
+
+
+const images = [  
+  { src: "/Users/Ondrea/Desktop/Chanel fall 2023/00008-chanel-fall-2023-ready-to-wear-details-credit-gorunway.jpg", alt: 'Image 1', keywords: ['jackets', 'jacket'] },
+ 
+  { src: 'image2.jpg', alt: 'Image 2', keywords: ['pants', 'bottoms'] },
+ 
+  { src: 'image3.jpg', alt: 'Image 3', keywords: ['tops', 'shirts'] },
+  
+  { src: 'image4.jpg', alt: 'Image 4', keywords: ['shoes', 'dessert'] },
+];
+
+function searchImages() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = '';
+  
+    images.forEach(image => {
+      const keywords = image.keywords.join(' ').toLowerCase();
+  
+      if (keywords.includes(searchTerm)) {
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.alt = image.alt;
+        resultsContainer.appendChild(img);
+      }
+    });
+  }

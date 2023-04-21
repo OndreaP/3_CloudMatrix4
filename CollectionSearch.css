@@ -1,3 +1,5 @@
+
+/* Header & Footer */
 *{
     margin: 0px;
     padding: 0px;
@@ -5,140 +7,170 @@
     text-decoration: none;
 }
 
-
-.bgimage img{
+nav{
     width: 100%;
-    object-fit: contain;
-}
-
-.search{
-    width: 100%;
-    height: 150px;
-    background: #012733;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.search form{
-    background: #ffffff;
-    width: 600px;
-    height: 55px;
-    display: flex;
-}
-
-.search form input{
-    flex: 1;
-    border:none;
-    outline: none;
-
-}
-
-.search form button{
-    background: #c3e3eb;
-    padding:10px;
-    border:none;
-    outline: none;
-    color:#012733;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-}
-
-.filter{
-    width: 100%;
-    height: 100px;
-    background: #012733;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.filter form{
-   
-    width: 600px;
-    height: 55px;
-    display: flex;
-    font-size: 20px;
-    color:white;
-}
-
-.filter form input{
-    flex: 1;  
-    border:none;
-    outline: none;
-   
-}
-
-.filter form button{
-    background: #c3e3eb;
-    padding:10px;
-    border:none;
-    outline: none;
-    color:#012733;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    
-}
-
- input.checkboxes{
-    width: 20px;
-    height: 20px;
-    padding-top: 3px;
-    
- }
-
- .imageResults img{
-    width: 100%;
-    object-fit: cover;
-    padding: 5%;
-    border-style: dotted;
-    border-color: #012733;
- }
-
- .content{
-    list-style: none;
-    
-    display:flex;
-    position: relative;
-    
- }
-
- .content .sidebar{
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 80px;
     position: fixed;
-    width: 300px;
-    height:1000px;
-    background: #c3e3eb;
-    padding: 30px 0px;
-    
-   
-   
- }
+    background-image: linear-gradient(#033747,black);
+}
 
- .content .sidebar h2{
-    color: #012733;
+nav .header span{
+    font-size:30px;
+    font-weight: bold;
+    float: left; 
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 35px;
- }
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    padding-right: 50px;
+    color: white;
+}
 
- .content .sidebar ul li{
-    padding: 15px;
-    border-bottom:20px solid #c3e3eb;
-    border-top:1px solid #c3e3eb;
-    text-align: center;
- }
+nav .header a {
+    text-decoration: none;
+    color: white;
+}
 
- .content .sidebar ul li a{
-    color: #012733;
-    font-size:35px;
-    
 
- }
+nav .header{
+    display: inline-block;
+    list-style: none;
+}
 
- .content2{
-    margin-left:300px;
-    width: 100%;
-    object-fit: contain;
- }
+nav a{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #FF8C69;
+}
+
+  /* The dropdown menu */
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+  
+.dropdown #dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#033747;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-transform: none;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*end of Header & Footer*/
+
+
+.bgImage {
+  background-image: url(https://assets.vogue.com/photos/616f075332e6aee08ea490e9/16:9/w_2580,c_limit/100_story.jpg);
+  padding: 100px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.searchBar{
+  width: auto;
+  height: 150px;
+  background: #012733;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding-top: 50px;
+  margin-left:300px;
+}
+
+input{
+  background: #ffffff;
+  width: 600px;
+  height: 40px;
+  display: flex;
+  
+}
+.searchBar button{
+  background: #c3e3eb;
+  padding:10px;
+  border:none;
+  outline: none;
+  color:#012733;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  height: 40px;
+}
+
+/*results*/
+#results {
+  padding-left: 300px;
+}
+
+
+#results img{
+  padding:10px;
+  width: 25%;
+}
+
+
+
+/*sidebar*/
+.content{
+  list-style: none;
+  padding-top: 50px;
+  display:flex;
+  position: relative;
+}
+
+.content .sidebar{
+  position: fixed;
+  width: 300px;
+  height:1000px;
+  background: #c3e3eb;
+  padding: 30px 0px;
+}
+
+ /*"all images"*/
+.content .sidebar h2{
+  color: #012733;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+.content .sidebar ul li{
+  padding: 15px;
+  border-bottom:20px solid #c3e3eb;
+  border-top:1px solid #c3e3eb;
+  text-align: center;
+  color: #012733;
+  font-size:35px;
+}
